@@ -1,7 +1,7 @@
 ---
 permalink: /
 author_profile: false
-layout: single
+layout: splash
 title: "Welcome!"
 header:
   image: /assets/images/pistorm_splash.jpg
