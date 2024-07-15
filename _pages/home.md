@@ -1,16 +1,10 @@
 ---
 permalink: /
 author_profile: false
-layout: splash
-title: "Open Source Accelerator for your Amiga"
-hidden: true
+layout: single
+title: "Welcome!"
 header:
-  overlay_image: /assets/images/pistorm_splash.jpg
+  image: /assets/images/pistorm_splash.jpg
   caption: "Image credit: [@edu_arana](https://x.com/edu_arana)"
-excerpt: >
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
 ---
+...
