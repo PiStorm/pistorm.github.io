@@ -11,6 +11,11 @@ main:
 side:
   - title: "Introduction"
   - title: "Documentation"
+    children:
+      - title: "Hardware"
+        children:
+          - title: "PiStorm classic"
+          - title: "PiStorm32-lite"
   - title: "FAQ"
     url: "/faq/"
     children:
