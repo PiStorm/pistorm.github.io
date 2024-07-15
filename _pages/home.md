@@ -2,7 +2,7 @@
 permalink: /
 author_profile: false
 layout: splash
-title: "Welcome!"
+title: "PiStorm - Open Source Accelerator for your Amiga"
 header:
   image: /assets/images/pistorm_splash.jpg
   caption: "Image credit: [@edu_arana](https://x.com/edu_arana)"
