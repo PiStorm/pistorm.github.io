@@ -10,8 +10,7 @@ intro:
   - excerpt: >
       PiStorm is a hardware project designed to enhance capabilities of your Amiga 
       significantly. It involves RaspberryPi single board computer which replaces
-      the 680x0 series CPU of your machine providing a significant boost in performance.<br/><br/>
-      Key features of PiStorm
+      the 680x0 series CPU of your machine providing a significant boost in performance.
 feature_row:
   - title: "Open Source"
     excerpt: >
