@@ -16,15 +16,16 @@ feature_row:
   - title: "Open Source"
     excerpt: >
       Both PiStorm hardware and software are released under open source licenses ranging from BSD-alike
-      to MPLv2. Build PiStorm, buy it, download software from GitHub or sarch for ready to use 
-      distributions. It's up to you.
+      to MPLv2. Build PiStorm, buy it or sell it. Download software from GitHub free of charge or sarch for 
+      ready to use  distributions. It's up to you. Contribute to the project if you like, too.
     url: "/docs/license/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - title: "Performance"
     excerpt: >
       PiStorm is fast. Very fast. The virtual CPU provided by Emu68 is a bare-metal JIT solution translating m68k
-      instruction stream to AArch64. The performance varies depending on the translate code and can go as high as 1MIPS/1MHz.
+      instruction stream to AArch64. The performance varies depending on the translate code and can go as high as 
+      1 MIPS per 1 MHz. Enjoy CPU hungry software for the first time.
     url: "/docs/benchmarks/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
