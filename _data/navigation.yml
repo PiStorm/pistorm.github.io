@@ -7,3 +7,17 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
+
+side:
+  - title: "Introduction"
+  - title: "Documentation"
+  - title: "FAQ"
+    children:
+      - title: "Hardware"
+        url: "/faq/hardware/"
+      - title: "Emu68"
+        url: "/faq/emu68/"
+      - title: "Musashi"
+        url: "/faq/musashi/"
+      - title: "Miscellaneous"
+        url: "/faq/misc/"
