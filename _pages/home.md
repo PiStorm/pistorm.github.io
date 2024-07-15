@@ -2,7 +2,7 @@
 permalink: /
 author_profile: false
 layout: splash
-title: ""
+title: "Open Source Accelerator for your Amiga"
 hidden: true
 header:
   overlay_image: /assets/images/pistorm_splash.jpg
