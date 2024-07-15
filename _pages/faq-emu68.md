@@ -5,8 +5,6 @@ permalink: "/faq/emu68/"
 toc: true
 ---
 
-# Frequently asked questions - Emu68
-
 - [I have found a bug, what now?](#i-have-found-a-bug-what-now)
 - [My A1200 is showing 512kb Chip RAM with PiStorm32, what gives?](#my-a1200-is-showing-512kb-chip-ram-with-pistorm32-what-gives)
 
