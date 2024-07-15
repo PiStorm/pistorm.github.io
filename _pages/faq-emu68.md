@@ -7,6 +7,8 @@ toc: true
 
 - [I have found a bug, what now?](#i-have-found-a-bug-what-now)
 - [My A1200 is showing 512kb Chip RAM with PiStorm32, what gives?](#my-a1200-is-showing-512kb-chip-ram-with-pistorm32-what-gives)
+- [Should I install 68040.library?](#should-i-install-68040library)
+- [Should I shutdown Pi when powering Amiga off?](#should-i-shutdown-pi-when-powering-amiga-off)
 
 ## I have found a bug, what now?
 
@@ -21,3 +23,12 @@ version, Emu68 version, Amiga model) and steps necessary to reproduce the issue.
 ## My A1200 is showing 512kb Chip RAM with PiStorm32, what gives?
 
 Your cmdline.txt has one or more of the ``move_slow_to_chip`` ``enable_c0_slow`` ``enable_c8_slow`` ``enable_d0_slow``  commands in. Remove it/them. They're for machines with less than 2meg Chip.
+
+## Should I install 68040.library?
+
+No, Emu68 provides its own version of ``68040.library`` which is built in into the driver pack ROM. It is autimatically initialized on boot, so a version stored on the hard drive would not even load.
+
+## Should I shutdown Pi when powering Amiga off?
+
+No. Emu68 is bare metal software and has no underlying opeating system requiring a shutdown. When you want to power your Amiga
+off, do it just like you always did: watch the activity of all drives and, when they are not in use, switch your Amiga off.
