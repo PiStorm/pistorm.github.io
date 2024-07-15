@@ -78,15 +78,15 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/pistorm/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://www.facebook.com/groups/pistorm/"
+    - label: "Discord"
+      icon: "fab fa-fw fa-discord"
+      url: "https://www.discord.com/"
 
 defaults:
   # _posts
@@ -95,10 +95,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
-      comments: true
-      share: true
+      comments: false
+      share: false
       related: true
   # _pages
   - scope:
@@ -106,7 +106,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
 category_archive:
   type: liquid
