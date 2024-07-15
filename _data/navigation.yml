@@ -12,6 +12,7 @@ side:
   - title: "Introduction"
   - title: "Documentation"
   - title: "FAQ"
+    url: "/faq/"
     children:
       - title: "Hardware"
         url: "/faq/hardware/"
