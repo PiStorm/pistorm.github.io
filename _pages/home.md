@@ -2,7 +2,7 @@
 permalink: /
 title: "Home page"
 author_profile: false
-layout: home
+layout: splash
 ---
 
 ### Nothing
