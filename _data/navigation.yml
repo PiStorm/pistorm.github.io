@@ -17,7 +17,7 @@ side:
           - title: "PiStorm classic"
           - title: "PiStorm32-lite"
   - title: "License"
-    url: "/licence/usage/"
+    url: "/license/usage/"
     children:
       - title: "MIT"
         url: "/license/mit/"
