@@ -21,6 +21,8 @@ side:
     children:
       - title: "MIT"
         url: "/license/mit/"
+      - title: "BSD"
+        url: "/license/bsd/"
       - title: "MPL-2.0"
         url: "/license/mpl20/"
   - title: "FAQ"

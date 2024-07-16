@@ -4,7 +4,7 @@ classes: single
 permalink: "/license/mit/"
 ---
 
-Copyright © `2021-2024` `PiStorm developers`
+Copyright © 2021-2024 PiStorm developers
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
