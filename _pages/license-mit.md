@@ -1,11 +1,8 @@
 ---
-title: MIT License
+title: The MIT License (MIT)
 classes: single
 permalink: "/license/mit/"
 ---
-
-The MIT License (MIT)
-=====================
 
 Copyright © `2021-2024` `PiStorm developers`
 
