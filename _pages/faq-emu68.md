@@ -9,6 +9,7 @@ toc: true
 - [My A1200 is showing 512kb Chip RAM with PiStorm32, what gives?](#my-a1200-is-showing-512kb-chip-ram-with-pistorm32-what-gives)
 - [Should I install 68040.library?](#should-i-install-68040library)
 - [Should I shutdown Pi when powering Amiga off?](#should-i-shutdown-pi-when-powering-amiga-off)
+- [I've got a working hdf, how do I put that onto an SD for PiStorm?](#ive-got-a-working-hdf-how-do-i-put-that-onto-an-sd-for-pistorm)
 
 ## I have found a bug, what now?
 
@@ -32,3 +33,10 @@ No, Emu68 provides its own version of ``68040.library`` which is built in into t
 
 No. Emu68 is bare metal software and has no underlying opeating system requiring a shutdown. When you want to power your Amiga
 off, do it just like you always did: watch the activity of all drives and, when they are not in use, switch your Amiga off.
+
+## I've got a working hdf, how do I put that onto an SD for PiStorm?
+
+First, the hdf must be RDB type. Open it in a hex editor and check the first few bytes - if it's RDSK you're good, if it's DOS it won't work - that's not bootable on a real Amiga, only in an emulator. Now head over to [hdf2emu68 tool](https://github.com/PiStorm/hdf2emu68) and follow the instructions there, that tool does all the partitioning needed to make a PiStorm SD and writes your hdf to the ``0x76`` partition.
+
+Finally add the emu68 files to the fat32 partition on the SD and configure it up as normal. 
+
