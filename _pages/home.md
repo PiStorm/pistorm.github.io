@@ -15,7 +15,7 @@ feature_row:
   - title: "Open Source"
     excerpt: >
       Both PiStorm hardware and software are released under open source licenses ranging from BSD-alike
-      to MPLv2. Build PiStorm, buy it or sell it. Download software from GitHub free of charge or sarch for 
+      to MPLv2. Build PiStorm, buy it or sell it. Download software from GitHub free of charge or search for 
       ready to use  distributions. It's up to you. Contribute to the project if you like, too.
     url: "/license/usage/"
     btn_class: "btn--primary"
