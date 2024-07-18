@@ -2,7 +2,7 @@
 title: Frequently Asked Questions - Emu68
 classes: single
 permalink: "/faq/emu68/"
-toc: true
+toc: false
 ---
 
 - [I have found a bug, what now?](#i-have-found-a-bug-what-now)
