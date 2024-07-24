@@ -23,7 +23,7 @@ feature_row:
   - title: "Performance"
     excerpt: >
       PiStorm is fast. Very fast. The virtual CPU provided by Emu68 is a bare-metal JIT solution translating m68k
-      instruction stream to AArch64. The performance varies depending on the translate code and can go as high as 
+      instruction stream to AArch64. The performance varies depending on the translated code and can go as high as 
       1 MIPS per 1 MHz. Enjoy CPU hungry software for the first time.
     url: "/docs/benchmarks/"
     btn_class: "btn--primary"
