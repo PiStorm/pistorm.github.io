@@ -14,25 +14,19 @@ intro:
 feature_row:
   - title: "Open Source"
     excerpt: >
-      Both PiStorm hardware and software are released under open source licenses ranging from BSD-alike
-      to MPLv2. Build PiStorm, buy it or sell it. Download software from GitHub free of charge or search for 
-      ready to use  distributions. It's up to you. Contribute to the project if you like, too.
+      Both PiStorm hardware and software are released under open-source licenses, ranging from BSD-like to MPLv2. You can build, buy, or sell PiStorm, and download the software from GitHub for free, or look for ready-to-use distributions. The choice is yours. Contributions to the project are also welcome.
     url: "/license/usage/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - title: "Performance"
     excerpt: >
-      PiStorm is fast. Very fast. The virtual CPU provided by Emu68 is a bare-metal JIT solution translating m68k
-      instruction stream to AArch64. The performance varies depending on the translated code and can go as high as 
-      1 MIPS per 1 MHz. Enjoy CPU hungry software for the first time.
+      PiStorm is incredibly fast. The virtual CPU provided by Emu68 uses a bare-metal JIT solution to translate the m68k instruction stream to AArch64. Performance varies depending on the translated code, reaching up to 1 MIPS per MHz. For the first time, you can truly enjoy CPU-intensive software.
     url: "/docs/benchmarks/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - title: "Compatibility"
     excerpt: >
-      While aiming at highest possible performance, it is possible to adjust speed of the virtual CPU according
-      to the needs. Change the JIT parameters of Emu68 in real time and watch old CPU sensitive demos like 
-      e.g. State-of-the-art, or go for full speed when working with 3D software.
+      While aiming for the highest possible performance, you can adjust the speed of the virtual CPU to suit your needs. Modify the JIT parameters of Emu68 in real-time and enjoy CPU-sensitive demos like "State-of-the-Art," or switch to full speed when working with 3D software.
     url: "/docs/compatibility/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
