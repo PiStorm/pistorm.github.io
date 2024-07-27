@@ -39,7 +39,7 @@ TBD...
 
 ## LightWave
 
-In this test, you start LightWave 3.5, preferably the FPU version, and load a [scene](http://zgodzinski.com/lightwave_benchmark/lw_35_benchmark.zip) prepared by Piotr Zgodzinski (AKA Jubi). Without making any changes in LightWave, begin the rendering process. The total rendering times for various CPU versions with FPU (and for the 68020 and 68000 **without** it) are provided below. Lower values indicate better performance. The x-axis of the plot is logarithmic for clarity due to the wide range of rendering times.
+In this test, you start LightWave 3.5, preferably the FPU version, and load a [scene](http://zgodzinski.com/lightwave_benchmark/lw_35_benchmark.zip) prepared by Piotr Zgodzinski (AKA Jubi). Without making any changes in LightWave, begin the rendering process. The total rendering times for various CPU versions with FPU (and for the 68020 and 68000 **without** it) are provided below. Lower values indicate better performance. 
 
 {% include figure popup=true image_path="/assets/images/LightWave.png" alt="LightWave rendering time" %}
 
