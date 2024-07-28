@@ -34,3 +34,13 @@ off, do it just like you always did: watch the activity of all drives and, when 
 First, the hdf must be RDB type. Open it in a hex editor and check the first few bytes - if it's RDSK you're good, if it's DOS it won't work - that's not bootable on a real Amiga, only in an emulator. Now head over to [hdf2emu68 tool](https://github.com/PiStorm/hdf2emu68) and follow the instructions there, that tool does all the partitioning needed to make a PiStorm SD and writes your hdf to the ``0x76`` partition.
 
 Finally add the emu68 files to the fat32 partition on the SD and configure it up as normal. 
+
+### Can I change CPU type in Emu68?
+
+No, Emu68 does not emulate any specific CPU type. It identifies itself as a 68040 solely to support a particular set of supervisor instructions for system maintenance. Beyond this, it has no similarities with any member of the 680x0 family. It features distinct instruction execution timings, architecture, caches, and operating principles, none of which can be altered.
+
+### Can I turn of JIT?
+
+Short answer: Yes, by powering off your Amiga.
+
+Longer answer: Emu68 is exclusively a Just-In-Time (JIT) engine. It does not have an interpreter mode that can be enabled upon request. Although an interpreter mode might be developed in the distant future, for now, Emu68 operates solely as a JIT engine. Despite this, Emu68 is highly customizable at runtime, allowing you to enjoy legacy software such as games, demos, and other applications.
