@@ -38,8 +38,10 @@ definitely not working and many other fancy effects. Just DO NOT DO THAT.
 
 ### What about RaspberryPi 5?
 
-Unfortunately, the Raspberry Pi Foundation introduced a south-bridge in the Pi5, an additional chip that handles the GPIO, which is crucial for PiStorm's fast communication between hardware and software. This south-bridge connects to the ARM CPU via a PCIe x4 bus. While the bus itself is excellent for bulk transfers, it has very high setup times, making the GPIO too slow for PiStorm's needs. We are not the only project affected by this limitation, and the Raspberry Pi Foundation is aware of the issue. As a result, we are currently limited to using the Pi Zero 2 W, Pi 3, Pi 4, and CM4.
+Short answer: forget it.
+
+Long answer: Unfortunately, the Raspberry Pi Foundation introduced a south-bridge in the Pi5, an additional chip that handles the GPIO, which is crucial for PiStorm's fast communication between hardware and software. This south-bridge connects to the ARM CPU via a PCIe x4 bus. While the bus itself is excellent for bulk transfers, it has very high setup times, making the GPIO too slow for PiStorm's needs. We are not the only project affected by this limitation, and the Raspberry Pi Foundation is aware of the issue. As a result, we are currently limited to using the Pi Zero 2 W, Pi 3, Pi 4, and CM4.
 
 ### Will you be able to use CM5 maybe?
 
-It is highly likely that the CM5 (Compute Module 5) will suffer from the same issue with the GPIO north bridge as the Pi5. Therefore, we do not plan to support the CM5 in the future. If a version without the south bridge becomes available, we may reconsider. However, for now, the CM5 is not an option for us.
+It is highly likely that the CM5 (Compute Module 5) will suffer from the same issue with the GPIO south bridge as the Pi5 (see previous FAQ entry). Therefore, we do not plan to support the CM5 in the future. If a version without the south bridge becomes available, we may reconsider. However, for now, the CM5 is not an option for us.
