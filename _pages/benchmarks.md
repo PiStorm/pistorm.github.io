@@ -34,6 +34,18 @@ Additionally, please note that the Dhrystone result in SysInfo is not an actual 
 
 ... plot will follow...
 
+## CoreMark 1.0
+
+CoreMark ([coremark.org](https://www.eembc.org/coremark/)) is a benchmarking tool developed by the Embedded Microprocessor Benchmark Consortium (EEMBC). It provides a standardized, industry-accepted method for evaluating processor performance across various architectures and implementations. CoreMark includes a range of workloads, such as:
+- List processing (find and sort operations)
+- Matrix manipulation (common in many algorithms)
+- State machine processing (useful for many control-oriented tasks)
+- Cyclic redundancy check (CRC) (common in data integrity checking)
+
+The executable is easily portable across different systems. You can find a binary compiled for AmigaOS (68020, no FPU required) [here](/assets/files/coremark_softfloat.zip).
+
+{% include figure popup=true image_path="/assets/images/CoreMark.png" alt="CoreMark 1.0 scores" %}
+
 # Real-world benchmarks
 TBD...
 
