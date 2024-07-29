@@ -49,6 +49,21 @@ The executable is easily portable across different systems. You can find a binar
 # Real-world benchmarks
 TBD...
 
+## Doom Attack
+
+The DoomAttack archive is available for download on this website ([link](/assets/files/DoomAttack_Doom1_SW.zip)). After downloading and unpacking the archive, start the demo using the following command:
+```
+doomattack -forcedemo -timedemo demo3
+```
+For consistency, use "NTSC: Low res" mode for AGA testing and "320x200x8" mode for RTG tests. The game will start in benchmark mode and conclude with an error message similar to:``Error: timed 2134 gametics in XXXX realtics``. You can calculate the FPS using the following formula:
+```
+FPS = 35 * (2134 / realticks)
+```
+Below are the benchmark results for PiStorm and a regular Amiga.
+
+{% include figure popup=true image_path="/assets/images/DOOM_Attack_AGA.png" alt="DOOM Attack, AGA mode" %}
+{% include figure popup=true image_path="/assets/images/DOOM_Attack_RTG.png" alt="DOOM Attack, RTG mode" %}
+
 ## LightWave
 
 In this test, you start LightWave 3.5, preferably the FPU version, and load a [scene](http://zgodzinski.com/lightwave_benchmark/lw_35_benchmark.zip) prepared by Piotr Zgodzinski (AKA Jubi). Without making any changes in LightWave, begin the rendering process. The total rendering times for various CPU versions with FPU are provided below. Lower values indicate better performance. 
