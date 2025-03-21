@@ -1,5 +1,5 @@
 ---
-title: Benchmarks
+title: Performance
 classes: single
 permalink: "/docs/benchmarks/"
 toc: true
