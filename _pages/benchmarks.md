@@ -1,18 +1,18 @@
 ---
-title: Benchmarks
+title: Performance
 classes: single
 permalink: "/docs/benchmarks/"
 toc: true
 toc_sticky: true
 ---
 
-# Synthetic benchmarks
+### Synthetic benchmarks
 
 Synthetic benchmarks have significant limitations. They fail to represent real-world scenarios and only perform a narrow range of computations, highlighting a small portion of overall performance. Moreover, they are susceptible to manipulation, as one could optimize a CPU implementation or emulation specifically to excel in the benchmark.
 
 Synthetic benchmarks should not be trusted as a reliable performance measure. They are included here merely because many people enjoy making comparisons. However, further down this page, you will find measurements from real-world scenarios, such as archive compression and decompression, music encoding, and 3D scene rendering. More benchmarks will be added over time.
 
-## AIBB
+#### AIBB
 
 AIBB is one of the most comprehensive benchmark suites from earlier times, predating tools like SysSpeed and others. The benchmark results are categorized into three groups: integer benchmarks (which include memory speed tests), FPU benchmarks (focused on floating point math computations), and graphics benchmarks.
 
@@ -26,7 +26,7 @@ The graphics benchmarks require a brief explanation. They are relatively well-ba
 
 {% include figure popup=true image_path="/assets/images/AIBB_Gfx.png" alt="AIBB graphics benchmarks" %}
 
-## SysInfo 4.4
+#### SysInfo 4.4
 
 The SysInfo speed test is one of the least reliable for the Amiga. The speed test loop has changed slightly between different SysInfo versions, but the changes in chip memory speed measurement have been significant. If you wish to compare results between different systems, ensure that all tests are conducted using the same version of SysInfo.
 
@@ -34,7 +34,7 @@ Additionally, please note that the Dhrystone result in SysInfo is not an actual 
 
 ... plot will follow...
 
-## CoreMark 1.0
+#### CoreMark 1.0
 
 CoreMark ([coremark.org](https://www.eembc.org/coremark/)) is a benchmarking tool developed by the Embedded Microprocessor Benchmark Consortium (EEMBC). It provides a standardized, industry-accepted method for evaluating processor performance across various architectures and implementations. CoreMark includes a range of workloads, such as:
 - List processing (find and sort operations)
@@ -46,10 +46,10 @@ The executable is easily portable across different systems. You can find a binar
 
 {% include figure popup=true image_path="/assets/images/CoreMark.png" alt="CoreMark 1.0 scores" %}
 
-# Real-world benchmarks
+### Real-world benchmarks
 TBD...
 
-## Doom Attack
+#### Doom Attack
 
 The DoomAttack archive is available for download on this website ([link](/assets/files/DoomAttack_Doom1_SW.zip)). After downloading and unpacking the archive, start the demo using the following command:
 ```
@@ -64,11 +64,11 @@ Below are the benchmark results for PiStorm and a regular Amiga.
 {% include figure popup=true image_path="/assets/images/DOOM_Attack_AGA.png" alt="DOOM Attack, AGA mode" %}
 {% include figure popup=true image_path="/assets/images/DOOM_Attack_RTG.png" alt="DOOM Attack, RTG mode" %}
 
-## LightWave
+#### LightWave
 
 In this test, you start LightWave 3.5, preferably the FPU version, and load a [scene](http://zgodzinski.com/lightwave_benchmark/lw_35_benchmark.zip) prepared by Piotr Zgodzinski (AKA Jubi). Without making any changes in LightWave, begin the rendering process. The total rendering times for various CPU versions with FPU are provided below. Lower values indicate better performance. 
 
 {% include figure popup=true image_path="/assets/images/LightWave.png" alt="LightWave rendering time" %}
 
-## MP3 encoding
+#### MP3 encoding
 TBD...

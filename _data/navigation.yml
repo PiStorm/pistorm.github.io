@@ -11,6 +11,10 @@ side:
   - title: "Documentation"
     url: "/docs/"
     children:
+      - title: "Compatibility"
+        url: "/docs/compatibility/"
+      - title: "Performance"
+        url: "/docs/benchmarks/"
       - title: "Hardware"
         url: "/docs/hardware/"
       - title: "Musashi"
