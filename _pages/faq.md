@@ -5,6 +5,7 @@ permalink: "/faq/"
 toc: false
 ---
 
-The FAQ section is a moving target...
+You can read frequently asked questions about:
 
-more text to be added...
+- [hardware](/faq/hardware/)
+- [Emu68](/faq/emu68/)
