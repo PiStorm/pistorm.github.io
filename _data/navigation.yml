@@ -21,6 +21,13 @@ side:
         url: "/docs/musashi/"
       - title: "Emu68"
         url: "/docs/emu68/"
+  - title: "Tutorials"
+    url: "/tutorials/"
+    children:
+      - title: "Setting up P96"
+        url: "/tutorials/p96setup/"
+      - title: "SD Card preparation"
+        url: "/tutorials/sd_setup/"
   - title: "License"
     url: "/license/usage/"
     children:
