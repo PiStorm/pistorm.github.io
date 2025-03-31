@@ -1,3 +1,6 @@
-# Nothing here yet
+# How to get running local copy
 
-Work in progress...
+PiStorm website uses [Jekyll](https://jekyllrb.com/) to generate static page.
+
+After cloning repository use instructions from [Jekyll quickstart
+page](https://jekyllrb.com/docs/).
