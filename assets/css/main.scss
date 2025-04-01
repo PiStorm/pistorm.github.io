@@ -12,3 +12,15 @@ search: false
   font-family: $global-font-family;;
   font-size: $type-size-6;
 }
+
+#main {
+  max-width: calc(100vw - 200px);
+}
+
+.masthead__inner-wrap {
+  max-width: calc(100vw - 200px);
+}
+
+.page__footer footer {
+  max-width: calc(100vw - 200px);
+}
