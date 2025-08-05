@@ -83,9 +83,7 @@ Ok, I hope you have selected correct disk and correct partition. The dangerous p
 
 ## Copying Emu68 files
 
-In order to bring Emu68 to life, the boot partition needs to be populated with Emu68 and RasPi files. Please go to the Emu68 releases page on github (you can find it here: https://github.com/michalsc/Emu68/releases) and locate either most recent Emu68 release or, if you prefer living on the edge, most recent ``Emu68-pistorm`` file. Remember to pick the version matching your PiStorm model. Users of classic PiStorm (A500/A600/A1000/A2000) should select ``Emu68-pistorm.zip``. Those of you who use PiStorm32-lite should go for ``Emu68-pistorm32lite.zip``. Copy (per drag and drop for example) contents of the archive onto the FAT32 partition of the microSD card
-
-**Double check that you have downloaded the *pistorm* version of the nightly, *not* the raspi verison.**
+In order to bring Emu68 to life, the boot partition needs to be populated with Emu68 and RasPi files. Please go to the Emu68 releases page on github (you can find it here: https://github.com/michalsc/Emu68/releases) and locate either most recent Emu68 release or, if you prefer living on the edge, most recent Emu68 archive from the ``nightly``section. Please remember nightly builds are done automatically from the actual snapshot of sources. There is no verificaion if they even work. When downloading Emu68, remember to pick the version matching your PiStorm model. Users of classic PiStorm (A500/A600/A1000/A2000) should select ``Emu68-pistorm.zip``. Those of you who use PiStorm32-lite should go for ``Emu68-pistorm32lite.zip``. Copy (per drag and drop for example) contents of the archive onto the FAT32 partition of the microSD card. The files shown in screenshot below might be different then those you will see on the SD card - this is normal, as Emu68 is an evolving project. Do not worry - everything should work as expected, provided you have picked the Emu68 matching your PiStorm model as outlined above.
 
 ![step_10](/assets/images/sd_prep/step_10.png)
 
