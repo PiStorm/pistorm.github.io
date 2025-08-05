@@ -83,7 +83,16 @@ Ok, I hope you have selected correct disk and correct partition. The dangerous p
 
 ## Copying Emu68 files
 
-In order to bring Emu68 to life, the boot partition needs to be populated with Emu68 and RasPi files. Please go to the Emu68 releases page on github (you can find it here: https://github.com/michalsc/Emu68/releases) and locate either most recent Emu68 release or, if you prefer living on the edge, most recent Emu68 archive from the ``nightly``section. Please remember nightly builds are done automatically from the actual snapshot of sources. There is no verificaion if they even work. When downloading Emu68, remember to pick the version matching your PiStorm model. Users of classic PiStorm (A500/A600/A1000/A2000) should select ``Emu68-pistorm.zip``. Those of you who use PiStorm32-lite should go for ``Emu68-pistorm32lite.zip``. Copy (per drag and drop for example) contents of the archive onto the FAT32 partition of the microSD card. The files shown in screenshot below might be different then those you will see on the SD card - this is normal, as Emu68 is an evolving project. Do not worry - everything should work as expected, provided you have picked the Emu68 matching your PiStorm model as outlined above.
+In order to bring Emu68 to life, the boot partition needs to be populated with Emu68 itself as well as RasPi firmware files. Please go to the Emu68 releases page on github (you can find it here: https://github.com/michalsc/Emu68/releases) and locate either most recent Emu68 release or, if you prefer living on the edge, most recent Emu68 archive from the ``nightly``section. Please remember nightly builds are done automatically from the actual snapshot of sources. These are not verified and may just not work. Use the nightly version only if really necessary.
+
+When downloading Emu68, remember to pick the version matching your PiStorm model. On the Emu68 releases you will find three zip files:
+* ``Emu68-pistorm.zip`` - the release for users of classic PiStorm for A500, A600, A1000, or A2000,
+* ``Emu68-pistorm32lite.zip`` - the release for users of PiStorm32Lite for A1200,
+* ``Emu68-raspi.zip`` - the standalone release.
+
+The standalone release **is not** for PiStorm users. This is a version which runs without PiStorm and without Amiga - what it does is basically turning your RaspberryPi into a M68k based RaspberryPi.
+
+Once you have downloaded either ``Emu68-pistorm.zip`` or ``Emu68-pistorm32lite.zip`` archive file onto your computer, copy (per drag and drop for example) contents of the archive onto the FAT32 partition of the microSD card. The files shown in screenshot below might be different then those you will see on the SD card - this is normal, as Emu68 is an evolving project. Do not worry - everything should work as expected, provided you have picked the Emu68 matching your PiStorm model as outlined above.
 
 ![step_10](/assets/images/sd_prep/step_10.png)
 
