@@ -6,4 +6,4 @@ author_profile: false
 
 ### What is Musashi?
 
-Musashi was m68k emulator used with PiStorm before Emu68 became useful.
+Musashi is a m68k emulator used with PiStorm which was mainly used before Emu68 became useful.

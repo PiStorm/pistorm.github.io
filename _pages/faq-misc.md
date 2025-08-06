@@ -1,6 +1,6 @@
 ---
 permalink: /faq/misc/
-title: Frequently Asked Questions - Miscelanous
+title: Frequently Asked Questions - Miscellaneous
 author_profile: false
 ---
 
