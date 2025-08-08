@@ -19,8 +19,8 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   PiStorm - Open Source Accelerator for Amiga. Official website with
   basic information, guides and links.
-twitter_username: username
-github_username: username
+#twitter_username: username
+github_username: pistorm
 minimal_mistakes_skin: default
 search: true
 
