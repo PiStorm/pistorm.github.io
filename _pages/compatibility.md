@@ -11,7 +11,7 @@ to report it on Emu68’s GitHub page in Issues section. Is the problem related 
 software running on AmigaOS side (Emu68 drivers, tools and utilities) then
 please report it in Issues section of Emu68-tools.
 
-Before commiting a report, have a look at other open issues. If you find your
+Before committing a report, have a look at other open issues. If you find your
 issue there, feel free to comment and vote. If you are sure the issue is new,
 create a new entry. Please include all information you can think of (PiStorm
 hardware version, Emu68 version, Amiga model) and steps necessary to reproduce
