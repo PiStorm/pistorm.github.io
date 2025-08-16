@@ -17,8 +17,6 @@ side:
         url: "/docs/benchmarks/"
       - title: "Hardware"
         url: "/docs/hardware/"
-      - title: "Musashi"
-        url: "/docs/musashi/"
       - title: "Emu68"
         url: "/docs/emu68/"
   - title: "Tutorials"
