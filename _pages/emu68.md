@@ -2,6 +2,8 @@
 title: Emu68
 classes: single
 permalink: "/docs/emu68/"
+toc: true
+toc_sticky: true
 ---
 
 ### What it is?

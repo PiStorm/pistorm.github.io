@@ -9,4 +9,5 @@ author_profile: false
 *   [Performance](benchmarks)
 *   [Hardware](hardware)
 *   [Emu68](emu68)
+*   [Debugging](debugging)
 

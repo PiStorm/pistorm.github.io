@@ -19,6 +19,8 @@ side:
         url: "/docs/hardware/"
       - title: "Emu68"
         url: "/docs/emu68/"
+      - title: "Debugging"
+        url: "/docs/debugging/"
   - title: "Tutorials"
     url: "/tutorials/"
     children:
