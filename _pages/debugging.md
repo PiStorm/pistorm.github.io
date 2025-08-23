@@ -168,9 +168,11 @@ necessarily reflect the code currently being executed by Emu68. Translation only
 when a piece of code is needed for the first time, and once translated, that code remains 
 in the JIT cache and will not be re-translated.
 
-Each code dump begins with a hash value and the entry address on the m68k side:
+Each code dump begins with a hash value and the entry address on the m68k side followed 
+by the code:
 
 ```
+[ICache] Creating new translation unit with hash c006 (m68k code @ 0x0000000000f800d2)
 [JIT] 00f800d2: bra.w   $f80152              -> 00000000: add     PC, PC, #0x80
 [JIT] 00f80152: lea.l   $400.w, a7           -> 00000004: mov     A7, #0x400
 [JIT] 00f80156: lea.l   $f80000.l, a0        -> 00000008: mov     A0, #0xf80000
