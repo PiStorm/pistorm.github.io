@@ -105,4 +105,57 @@ the following pin order (left to right): GND, Clock, Data.
 
 ### Software
 
-TBD...
+#### FastSerial
+
+For receiving debug data in synchronous mode, you can use the FastSerial tool. This is a 
+command-line utility based on the FTDI ftd2xx libraries. Please install the drivers from
+[this link](https://ftdichip.com/wp-content/uploads/2025/03/CDM-v2.12.36.20-WHQL-Certified.zip).
+
+The FastSerial project will soon be available on GitHub. For now, you can download prebuilt 
+executables:
+
+* Windows 11 (x64): [FastSerial_win64.zip](/assets/files/FastSerial_win64.zip) 
+* Linux (x86_64): [FastSerial_linux_x64.zip](/assets/files/FastSerial_linux_x64.zip)
+A macOS build will be provided later.
+
+Once the FTDI drivers are installed, start the FastSerial executable:
+
+```
+> FastSerial.exe
+Listening on fast serial port...
+```
+
+As soon as Emu68 starts transmitting debug data, it will appear in the console.
+To store the debug output while still displaying it, specify a log file name as a parameter:
+
+```
+> FastSerial.exe some_log_file.txt
+Listening on fast serial port...
+```
+
+On Linux, additional setup may be required. The system will often load its own default 
+kernel modules, which conflict with ``libftd2xx.so`` when accessing the FT232H chip directly. 
+If this happens, you will see the following message:
+
+```
+$ ./FastSerial 
+FT_Open(0) failed, with error 3.
+Use lsmod to check if ftdi_sio (and usbserial) are present.
+If so, unload them using rmmod, as they conflict with ftd2xx.
+```
+
+In that case, unload the conflicting module with:
+
+```
+$ sudo rmmod ftdi_sio
+$ ./FastSerial
+Listening on fast serial port...
+```
+
+To avoid repeating this step after each reboot, consider updating your kernel module 
+blacklist to prevent ``ftdi_sio`` from loading automatically. Also, make sure you have 
+the correct access rights to the USB device so that you do not need to run ``FastSerial``
+with administrator privileges.
+
+#### Watching JIT as it is working
+
