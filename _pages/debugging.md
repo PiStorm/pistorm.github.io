@@ -158,4 +158,55 @@ the correct access rights to the USB device so that you do not need to run ``Fas
 with administrator privileges.
 
 #### Watching JIT as it is working
+You can modify (or create) the cmdline.txt file on the boot partition where Emu68 resides 
+to include the keywords 
+``debug disassemble``. This enables a special Emu68 mode in which information about each 
+translated block of m68k code is displayed.
 
+Although the disassembled units are shown in the order they are translated, this does not 
+necessarily reflect the code currently being executed by Emu68. Translation only occurs 
+when a piece of code is needed for the first time, and once translated, that code remains 
+in the JIT cache and will not be re-translated.
+
+Each code dump begins with a hash value and the entry address on the m68k side:
+
+```
+[JIT] 00f800d2: bra.w   $f80152              -> 00000000: add     PC, PC, #0x80
+[JIT] 00f80152: lea.l   $400.w, a7           -> 00000004: mov     A7, #0x400
+[JIT] 00f80156: lea.l   $f80000.l, a0        -> 00000008: mov     A0, #0xf80000
+[JIT] 00f8015c: moveq   #$ff, d1             -> 0000000c: mov     D1, #-1
+[JIT] 00f8015e: moveq   #$1, d2              -> 00000010: mov     D2, #1
+[JIT] 00f80160: moveq   #$0, d5              -> 00000014: mov     D5, wzr
+[JIT] 00f80162: add.l   (a0)+, d5            -> 00000018: ldr     w5, [A0:64], #4
+[JIT]                                        -> 0000001c: adds    D5, D5, w5
+[JIT]                                        -> 00000020: umov    w6, v19.h[5]
+[JIT]                                        -> 00000024: mrs     x7, nzcv
+[JIT]                                        -> 00000028: bfxil   w6, w7, #0x1c, #4
+[JIT]                                        -> 0000002c: cset    w7, hs
+[JIT]                                        -> 00000030: bfi     w6, w7, #4, #1
+[JIT] 00f80164: bcc.b   $f80168              -> 00000034: b.lo    #0x270
+[JIT]                                        -> 00000038: add     PC, PC, #0x14
+...
+```
+
+The left column shows the m68k code being translated, while the right 
+column contains the corresponding AArch64 code. If a single m68k 
+instruction requires multiple AArch64 instructions, blank lines are inserted 
+into the left column to visually align the output. Conversely, if several 
+m68k instructions are translated into a single AArch64 instruction, blank 
+lines are inserted in the right column. This alignment makes it easier to see 
+how the translation maps between the two architectures.
+
+Each translated dump ends with one or more exit points from the generated 
+AArch64 code back to the main JIT loop. The default exit point is labeled 
+``EXIT_DEF``. Additional exit points, used for example by conditional instructions,
+are labeled sequentially as ``EXIT_001``, ``EXIT_002``, and so on.
+
+Finally, the dump concludes with a summary block followed by a binary dump 
+of the translated AArch64 block. The binary dump can be used with online 
+disassemblers, while the summary block provides:
+* the number of m68k instructions translated
+* the number of AArch64 instructions generated
+* the mean number of AArch64 instructions per m68k instruction
+* a CRC32 checksum of the block
+* the target memory address where the AArch64 code is stored
