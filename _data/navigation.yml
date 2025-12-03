@@ -28,6 +28,8 @@ side:
         url: "/tutorials/p96setup/"
       - title: "SD Card preparation"
         url: "/tutorials/sd_setup/"
+      - title: "SD Card preparation on Linux"
+        url: "/tutorials/sd_setup_linux/"
   - title: "License"
     url: "/license/usage/"
     children:
