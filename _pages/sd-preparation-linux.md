@@ -40,19 +40,19 @@ be avoided, but these are only few of them.
 
 Open the menu and navigate to **Preferences → Add / Remove Software**.
 
-![add-remove-software](img/sd_prep_linux/01.png)
+![add-remove-software](/assets/images/sd_prep_linux/01.png)
 
 In the search box, type: ``gparted``. Select it to install with the checkbox:
 
-![search-gparted](img/sd_prep_linux/02.png)
+![search-gparted](/assets/images/sd_prep_linux/02.png)
 
 Do the same for ``lhasa``:
 
-![search-lhasa](img/sd_prep_linux/03.png)
+![search-lhasa](/assets/images/sd_prep_linux/03.png)
 
 And ``fs-uae``:
 
-![search-fs-uae](img/sd_prep_linux/04.png)
+![search-fs-uae](/assets/images/sd_prep_linux/04.png)
 
 Click on OK button on the bottom to install selected packages. You may be
 prompted for your password.
@@ -61,11 +61,11 @@ For creating PFS3 partitions, we'll need **pfs3aio**. Open your web browser,
 go to [Aminet search page](https://aminet.net/search?query=pfs3aio) and download
 ``pfs3aio.lha`` archive.
 
-![aminet](img/sd_prep_linux/05.png)
+![aminet](/assets/images/sd_prep_linux/05.png)
 
 Open Downloads folder, right click on the archive and select "Extract Here" option.
 
-![aminet](img/sd_prep_linux/06.png)
+![aminet](/assets/images/sd_prep_linux/06.png)
 
 Close all windows.
 
@@ -73,7 +73,7 @@ Close all windows.
 
 Launch GParted from the menu (System Tools -> GParted).
 
-![run gparted](img/sd_prep_linux/07.png)
+![run gparted](/assets/images/sd_prep_linux/07.png)
 
 Enter your password if prompted.
 
@@ -81,22 +81,22 @@ Gparted window will open with your main disk shown (whether it is SD Card or USB
 drive). Remember, or write down the device name of your main disk, as you will
 need to avoid it later.
 
-![gparted](img/sd_prep_linux/08.png)
+![gparted](/assets/images/sd_prep_linux/08.png)
 
 Insert your microSD card in the card reader to USB port.
 Select "Refresh devices" from GParted menu, or just hit
 Ctrl-R. Select the new device from the dropdown list on the top right corner of
 the window (e.g., ``/dev/sda``). It must NOT be the same device as your OS disk.
 
-![gparted](img/sd_prep_linux/09.png)
+![gparted](/assets/images/sd_prep_linux/09.png)
 
 Right click on each partition and select "Delete" option.
 
-![gparted](img/sd_prep_linux/10.png)
+![gparted](/assets/images/sd_prep_linux/10.png)
 
 Click on the green checkmark button on the toolbar to apply the changes.
 
-![gparted](img/sd_prep_linux/11.png)
+![gparted](/assets/images/sd_prep_linux/11.png)
 
 Right click on the unallocated space and select "New" option. In the dialog set
 the following parameters:
@@ -108,7 +108,7 @@ the following parameters:
 
 Click "Add".
 
-![gparted](img/sd_prep_linux/12.png)
+![gparted](/assets/images/sd_prep_linux/12.png)
 
 Right click on the remaining unallocated space and select "New" option
 again. In the dialog set the following parameters:
@@ -119,16 +119,16 @@ again. In the dialog set the following parameters:
 
 Click "Add".
 
-![gparted](img/sd_prep_linux/13.png)
+![gparted](/assets/images/sd_prep_linux/13.png)
 
 Click on the green checkmark button on the toolbar to apply the changes.
 
-![gparted](img/sd_prep_linux/14.png)
+![gparted](/assets/images/sd_prep_linux/14.png)
 
 Right-click the first partition and select **Manage Flags**. Check **lba**.
 
-![gparted](img/sd_prep_linux/15.png)
-![gparted](img/sd_prep_linux/16.png)
+![gparted](/assets/images/sd_prep_linux/15.png)
+![gparted](/assets/images/sd_prep_linux/16.png)
 
 Close GParted application.
 
@@ -149,7 +149,7 @@ t
 76
 w
 ```
-![terminal](img/sd_prep_linux/17.png)
+![terminal](/assets/images/sd_prep_linux/17.png)
 
 Close the terminal window.
 
@@ -162,7 +162,7 @@ Remove and re-insert card reader again. Dialog will open asking what to do with
 the newly inserted device. Close the dialog, or click Cancel button. Blue icon
 with the pendrive image should appear on the desktop.
 
-![removable dialog](img/sd_prep_linux/18.png)
+![removable dialog](/assets/images/sd_prep_linux/18.png)
 
 #### Step 2 - Prepare Emu68 boot files
 
@@ -170,14 +170,14 @@ Open browser and go to
 [Emu68 releases page](https://github.com/michalsc/Emu68/releases).
 Scroll down to Assets and download latest Emu68 proper for your PiStorm.
 
-![emu68](img/sd_prep_linux/19.png)
+![emu68](/assets/images/sd_prep_linux/19.png)
 
 Open Downloads folder, double click on the downloaded zip file to open
 Xarchiver. Close all windows, but the Xarchiver. Double click on pendrive icon
 on the desktop to open it. Go back to Xarchiver window and select all files.
 Drag selected files and drop them to the pendrive window.
 
-![extract files](img/sd_prep_linux/20.png)
+![extract files](/assets/images/sd_prep_linux/20.png)
 
 Copy Kickstart to the pendrive.
 
@@ -201,12 +201,12 @@ First, open file manager, create directory ``FS-UAE`` in your
 home directory, if it does not exist yet. Next, create subdirectory
 ``Configurations`` inside it.
 
-![filemanager](img/sd_prep_linux/21.png)
+![filemanager](/assets/images/sd_prep_linux/21.png)
 
 Finally, create new file and name it ``Default.fs-uae`` inside
 ``FS-UAE/Configurations`` directory, and then double click it to edit.
 
-![new file](img/sd_prep_linux/22.png)
+![new file](/assets/images/sd_prep_linux/22.png)
 
 Fill it with the contents:
 
@@ -246,69 +246,69 @@ pressing `F12 + F` keys.
 
 You should see AmigaOS screen.
 
-![amigaos](img/sd_prep_linux/23.png)
+![amigaos](/assets/images/sd_prep_linux/23.png)
 
 Before launching HDToolBox, copy PFS3 file to RamDisk for easier access.
 
 For that, open Downloads disk, select "Window -> Show -> All files", and
 locate ``pfs3aio``. Drag it to RamDisk icon on the desktop.
 
-![amigaos](img/sd_prep_linux/24.png)
+![amigaos](/assets/images/sd_prep_linux/24.png)
 
 Close the window, and open on Install3.2 disk (or whatever is the name of your
 installation media). Locate HDToolBox utility and launch it.
 
 You should see the hard drive detected by HDToolBox. Click "Change Drive Type"
 button.
-![amigaos](img/sd_prep_linux/25.png)
+![amigaos](/assets/images/sd_prep_linux/25.png)
 
 Then click "Define New..." button
 
-![amigaos](img/sd_prep_linux/26.png)
+![amigaos](/assets/images/sd_prep_linux/26.png)
 
 And finally "Read Configuration" button.
 
-![amigaos](img/sd_prep_linux/27.png)
+![amigaos](/assets/images/sd_prep_linux/27.png)
 
 Click "Ok".
 
-![amigaos](img/sd_prep_linux/28.png)
+![amigaos](/assets/images/sd_prep_linux/28.png)
 
 Click on "Partitioning Drive"
 
-![amigaos](img/sd_prep_linux/29.png)
+![amigaos](/assets/images/sd_prep_linux/29.png)
 
 On Partitioning window select "Advanced Options..." checkbox.
 
-![amigaos](img/sd_prep_linux/30.png)
+![amigaos](/assets/images/sd_prep_linux/30.png)
 
 Click on "Add/Update...".
 
-![amigaos](img/sd_prep_linux/31.png)
+![amigaos](/assets/images/sd_prep_linux/31.png)
 
 In the dialog which opens, click on "Add New File System..." button.
 
-![amigaos](img/sd_prep_linux/32.png)
+![amigaos](/assets/images/sd_prep_linux/32.png)
 
 Remove existing entry in dialog box, and type ``ram:pfs3aio``, then click "Ok".
 
-![amigaos](img/sd_prep_linux/33.png)
+![amigaos](/assets/images/sd_prep_linux/33.png)
 
 Replace existing DosType for File System with ``0x50465303`` (which is
 ``PFS\03`` in hexadecimal notation) and click "Ok" and "Ok" to close "File
 System maintenance" dialog.
 
-![amigaos](img/sd_prep_linux/34.png)
+![amigaos](/assets/images/sd_prep_linux/34.png)
 
 #### Step 5 - Defining partitions
 
 Select first partition and click "Change...".
 
-![amigaos](img/sd_prep_linux/35.png)
+![amigaos](/assets/images/sd_prep_linux/35.png)
 
 In the dialog which opens, set File System to "PFS\03", and press "Ok".
 
-![amigaos](img/sd_prep_linux/36.png)
+![amigaos](/assets/images/sd_prep_linux/36.png)
 
 Adjust name and size of the partition as you wish, and proceed similarly for the
 second partition, i.e:
@@ -323,7 +323,7 @@ Click "Ok" when done to close Partitioning window.
 Click on "Save Changes to Drive" button to write partition table to the disk,
 and then click "Exit" button to leave HDToolBox.
 
-![amigaos](img/sd_prep_linux/37.png)
+![amigaos](/assets/images/sd_prep_linux/37.png)
 
 You should see AmigaOS desktop again, with two new icons representing
 partitions. Click on the one labeled "DH0:Uninitialized" and select "Format
@@ -331,7 +331,7 @@ Disk..." from the "Icons" menu. Set the Volume Name as you wish (that suppose to
 be smaller, bootable partition with AmigaOS), and click on "Quick Format"
 button.  Proceed similarly for the second partition.
 
-![amigaos](img/sd_prep_linux/38.png)
+![amigaos](/assets/images/sd_prep_linux/38.png)
 
 Done! Now you can proceed with AmigaOS installation on the newly created
 partitions, or just copy your existing AmigaOS installation.
