@@ -38,6 +38,12 @@ copy RAM:emu68-vc4.card LIBS:Picasso96/
 
 Go to ``Devs/Monitors`` on your Workbench partition. You will find the PicassoIV icon there. If you don't care about the name, leave it with the existing name or you can rename it to something like ``Emu68-VC4``. It is just a cosmetic change so it is not really important. Now, open the ``Information`` about that icon and go to the tool types. Locate the entry ``BOARDTYPE``  and change it to ``Emu68-VC4``. Save the changes.
 
+### Important!
+
+As of version 1.2.1 of Videocore, an additional step is required if you are using the Aminet version of P96. You also need to add the ``VC4_LEGACY_ID`` tooltype. Go to the Tooltypes section and add this as a separate line. While the order the line appears in in the list of Tooltypes is  important, it must be on a separate line.
+
+Save the changes.
+
 ![step_04](/assets/images/p96/step_04.png)
 
 Now it is the time to reboot your machine. At this point you will still be using your existing screenmode so Workbench will be showing on a regular PAL (or NTSC) screen. Go to your Prefs folder on Workbench partition and open Picasso96Mode. It is rather empty so it has to be populated now. First, create new setting by dragging "New Item" icon to Settings area of the window. Drop it there
